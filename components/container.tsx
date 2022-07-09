@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { PropsWithChildren, useEffect } from "react";
-import Nav from "../nav";
-import metadata from "../../data/metadata";
+import Nav from "../pages/nav";
+import metadata from "../data/metadata";
 import Link from "next/link";
-import Logo from "../../assets/logo.svg"
+import Logo from "../assets/logo.svg"
 import { useRouter } from 'next/router'
 
 

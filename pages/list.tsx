@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/jsx-key */
-import BlogPost from './components/post';
+import BlogPost from '../components/post';
 import { getSortedPostsData } from '../lib/posts'
 import { GetStaticProps } from 'next';
 import { useEffect } from 'react';

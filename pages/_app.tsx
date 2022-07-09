@@ -1,7 +1,7 @@
 import "aos/dist/aos.css";
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Container  from './components/container'
+import Container  from '../components/container'
 import { useEffect } from 'react'
 import AOS from "aos";
 
