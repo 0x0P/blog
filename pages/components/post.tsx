@@ -12,7 +12,7 @@ const BlogPost = (props : any) => {
         </div>
       <Link href={`/posts/${props.id}`} passHref> 
         <a className="mt-3 w-min">
-            <div className="p-5 pb-3">
+            <div className="p-5 pt-1 pb-3">
             <div className={`font-bold text-2xl break-words`}>{props.title}</div>
             <div className={`font-light`}>{props.about}</div>
             </div>
