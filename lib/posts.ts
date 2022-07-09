@@ -2,7 +2,6 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
-import html from 'remark-html'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
@@ -17,7 +16,7 @@ export function getSortedPostsData() {
 
     return {
       id,
-      ...(matterResult.data as { date: string; title: string; about: string })
+      ...(matterResult.data as { date: string; title: string; about: string; category: string; tag: Array<string> })
     }
   })
   return allPostsData.sort((a, b) => {
@@ -47,12 +46,11 @@ export async function getPostData(id: string) {
   const matterResult = matter(fileContents)
 
   const processedContent = await remark()
-    .use(html)
     .process(matterResult.content)
-  const contentHtml = processedContent.toString()
+  const content = processedContent.toString()
   return {
     id,
-    contentHtml,
-    ...(matterResult.data as { date: string; title: string; about: string })
+    content,
+    ...(matterResult.data as { date: string; title: string; about: string; category: string; tag: Array<string> })
   }
 }

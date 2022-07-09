@@ -1,12 +1,10 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-
 const Home: NextPage = () => {
   return (
-    
-<h1>그런거없다</h1>
+  <div className='fixed w-screen h-screen flex flex-col justify-center items-center'>
+    <h1 className={`text-7xl rotate-[43deg]`}>404</h1>
+    <h1 className='text-2xl mt-10 rotate-[-16deg]	'>응 없어~</h1>
+  </div>
   )
 }
 

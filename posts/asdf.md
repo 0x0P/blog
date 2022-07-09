@@ -1,7 +1,10 @@
 ---
-title: '쓸만한 제목이 있네'
+title: '쓸만한 제목이 있d네'
 date: '2020-01-01'
 about: "asdfasdfsafsd"
+category: 'test'
+tag: ['aasbbsdf', 'bbbb']
+
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Nav = ({}) => {
   return (
-    <nav className="hidden navLinks flex-col items-center duration-150 h-screen top-0 justify-center">
+    <nav className="hidden show navLinks flex-col items-center duration-150 h-screen top-0 justify-center">
       {navlinks.map((nav) => (
         <>
         <Link href={nav.link} key={nav.title}>
