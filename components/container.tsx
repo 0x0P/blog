@@ -5,6 +5,7 @@ import metadata from "../data/metadata";
 import Link from "next/link";
 import Logo from "../assets/logo.svg"
 import { useRouter } from 'next/router'
+import NextNProgress from "nextjs-progressbar";
 
 
 const title = metadata.name
@@ -35,6 +36,15 @@ useEffect(() => {
       <Head>
         <title >{title}</title>
       </Head>
+      <NextNProgress
+        color="var(--color)"
+        startPosition={0}
+        stopDelayMs={200}
+        height={1}
+        showOnShallow={true}
+        options={{ showSpinner: false,
+      }}
+      />
       <header  className={`navDiv w-full flex flex-row duration-300 justify-between h-10 top-0 mt-0 items-center fixed z-10 	`}>
         <div className={`flex flex-row`}>
         <Link href="/">

@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@monaco-editor/react": "^4.4.5",
     "@reduxjs/toolkit": "^1.8.3",
     "@svgr/webpack": "^6.2.1",
     "@tailwindcss/typography": "^0.5.2",
     "animate-css-grid": "^1.4.3",
     "aos": "^2.3.4",
     "gray-matter": "^4.0.3",
+    "monaco-editor": "^0.33.0",
     "next": "12.2.0",
+    "nextjs-progressbar": "^0.0.14",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.3",
@@ -23,7 +26,8 @@
     "rehype-raw": "^6.1.1",
     "remark": "^14.0.2",
     "remark-gfm": "^3.0.1",
-    "remark-html": "^15.0.1"
+    "remark-html": "^15.0.1",
+    "scrollprogress": "^3.0.2"
   },
   "devDependencies": {
     "@types/node": "18.0.1",

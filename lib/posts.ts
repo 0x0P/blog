@@ -11,9 +11,7 @@ export function getSortedPostsData() {
     const id = fileName.replace(/\.md$/, '')
     const fullPath = path.join(postsDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
-
     const matterResult = matter(fileContents)
-
     return {
       id,
       ...(matterResult.data as { date: string; title: string; about: string; category: string; tag: Array<string> })

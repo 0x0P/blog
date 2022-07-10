@@ -48,7 +48,49 @@ export default function log({
         <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
         <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
         <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
-        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>10
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
+        <BlogPost tag={tag} category title={title} id={id} date={date} about={about}/>
         </>
           ))}
       </div>

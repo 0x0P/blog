@@ -8,6 +8,8 @@ import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import * as theme from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import ScrollProgress from 'scrollprogress';
+
 
 export default function Post({
   postData
@@ -22,6 +24,10 @@ export default function Post({
 
   useEffect(() => {
     changeTitle(postData.title)
+    const progressElement : HTMLDivElement = document.querySelector('.progressBar');
+    new ScrollProgress((x, y) => {
+      progressElement.style.width = y * 100 + '%';
+    });
 });
 
 const CodeBlock = {
@@ -50,7 +56,7 @@ const CodeBlock = {
         <title>{postData.title}</title>
       </Head>
       <article>
-        
+      <div className="fixed top-0 bg-indigo-500 left-0 right-0 h-[1.5px] z-10 progressBar"></div>
       <h1 className={`text-5xl font-extrabold m-5 mb-0 mt-10`}>{postData.title}</h1>
       <div className="m-5 mt-3  flex flex-row gap-2 flex-wrap">
           {postData.tag.map((tag) => ( 
