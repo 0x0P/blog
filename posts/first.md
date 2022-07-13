@@ -1,11 +1,10 @@
 ---
-title: '첫글'
+title: 'Hello, World!'
 date: '2022-07-14'
 about: "블로그 첫글"
 tags: ['첫글', '개발', 'TEST']
 img: '/helloworld.png'
 ---
-Hello, World!
 대충 일주일정도 걸려서 만든 블로그  
 Next.js로 대충 만들고 CMS는 딱히 없고   
 마크다운 기반. 깃허브로 커밋해서 글올리는 방식.  
