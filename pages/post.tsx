@@ -9,7 +9,7 @@ const data = `---
 title: '제목'
 date: '날짜'
 about: "설명"
-tag: ['태그1', '태그2']
+tags: ['태그1', '태그2']
 img: '/'
 ---`
 
