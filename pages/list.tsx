@@ -32,16 +32,6 @@ export default function log({
         <BlogPost img={img} tag={tag} category title={title} id={id} date={date} about={about}/>
         </>
           ))}
-                {allPostsData.map(({ about, id, date, title, tag, category, img }) => (
-        <>
-        <BlogPost img={img} tag={tag} category title={title} id={id} date={date} about={about}/>
-        </>
-          ))}
-                {allPostsData.map(({ about, id, date, title, tag, category, img }) => (
-        <>
-        <BlogPost img={img} tag={tag} category title={title} id={id} date={date} about={about}/>
-        </>
-          ))}
       </div>
       </section>
   );
