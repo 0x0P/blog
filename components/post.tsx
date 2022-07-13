@@ -27,6 +27,7 @@ const BlogPost : NextPage<propsTypes> = (props) => {
         <a className="mt-3 w-min">
             <div className="p-5 pt-1 pb-3">
             <div className={`font-bold text-2xl break-words`}>{props.title}</div>
+            <h1 className="font-thin text-sm w-fit">{props.date}</h1>
             <div className={`font-light`}>{props.about}</div>
             </div>
             <Image
