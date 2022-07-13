@@ -1,8 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import type { NextPage } from "next";
-import styles from "../styles/index.module.css";
 import Editor, { DiffEditor, useMonaco, loader } from "@monaco-editor/react";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 import { useRouter } from "next/router";

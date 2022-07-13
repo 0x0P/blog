@@ -4,6 +4,8 @@ import type { AppProps } from 'next/app'
 import Container  from '../components/container'
 import { useEffect } from 'react'
 import AOS from "aos";
+import '../styles/code.min.css';
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {

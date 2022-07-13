@@ -4,11 +4,8 @@ import Head from 'next/head'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { useEffect } from 'react'
 import { changeTitle } from '../../lib/ct'
-import ReactMarkdown from 'react-markdown'
-import rehypeRaw from 'rehype-raw';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import * as theme from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import ScrollProgress from 'scrollprogress';
+import Image from "next/future/image";
 
 
 export default function Post({
@@ -19,9 +16,13 @@ export default function Post({
     date: string
     content: string
     tag: Array<string>
+    img: string
   }
 }) {
-
+  let img = postData.img
+  if(!img){
+    img = "/test.png"
+  }
   useEffect(() => {
     changeTitle(postData.title)
     const progressElement : HTMLDivElement = document.querySelector('.progressBar');
@@ -29,34 +30,21 @@ export default function Post({
       progressElement.style.width = y * 100 + '%';
     });
 });
-
-const CodeBlock = {
-  code({ node, inline, className, children, ...props }) {
-    const match = /language-(\w+)/.exec(className || '');
-    return !inline && match ? (
-      <SyntaxHighlighter 
-      className="rounded-md w-fit bg-slate-800 dark:bg-gray"
-        style={theme.vscDarkPlus}
-        language={match[1]}
-        PreTag="div"
-        {...props}
-      >
-        {String(children).replace(/\n$/, '')}
-      </SyntaxHighlighter>
-    ) : (
-      <code className={className} {...props}>
-        {children}
-      </code>
-    );
-  },
-};
+let style = { 
+  backgroundImage: `url("${img}")`,
+  backgroundRepeat: 'no-repeat',
+  backgroundAttachment: 'fixed',
+ } 
   return (
     <>
       <Head>
         <title>{postData.title}</title>
       </Head>
       <article>
-      <div className="fixed top-0 bg-indigo-500 left-0 right-0 h-[1.5px] z-10 progressBar"></div>
+      <div className="fixed top-0 bg-black dark:bg-white left-0 right-0 h-[1.5px] z-10 progressBar"></div>
+      <div style={style}
+      className="bgImg w-screen m-0 p-0  h-56 bg-cover mt-10 bg-center rounded-xl"
+      />
       <h1 className={`text-5xl font-extrabold m-5 mb-0 mt-10`}>{postData.title}</h1>
       <div className="m-5 mt-3  flex flex-row gap-2 flex-wrap">
           {postData.tag.map((tag) => ( 
@@ -65,10 +53,7 @@ const CodeBlock = {
         </div>
         <div>
         </div>
-        <ReactMarkdown 
-        rehypePlugins={[rehypeRaw]}
-        components={CodeBlock}
-        className='p-5 w-fit'>{postData.content}</ReactMarkdown>
+          <div className='p-5 w-fit' dangerouslySetInnerHTML={{ __html: postData.content }} />
       </article>
       </>
   )

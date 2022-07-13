@@ -4,6 +4,7 @@ date: '2022-07-09'
 about: "TEST"
 category: 'test'
 tag: ['TEST', '테스트', '응애']
+img: '/vercel.svg'
 ---
 ***Hello, World!***
 아아아아아아암ㄴㅇ라나ㅣ

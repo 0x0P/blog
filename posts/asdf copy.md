@@ -4,6 +4,7 @@ date: '202220-01-01'
 about: "asdfasdfsafsd"
 category: 'test'
 tag: ['asdf', 'asf']
+img: '/7a054963e7cdb8c3e665d38f090d4bfd.jpg'
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

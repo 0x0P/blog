@@ -4,6 +4,7 @@ date: '2020-01-01'
 about: "asdfasdfsafsd"
 category: 'test'
 tag: ['aasbbsdf', 'bbbb']
+img : '/test.png'
 
 ---
 
