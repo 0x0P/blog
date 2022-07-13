@@ -2,8 +2,7 @@
 title: 'When to Use Static Generation v.s. Server-side Rendering'
 date: '2020-01-02'
 about: "asdf"
-category: 'test'
-tag: ['asdf', 'test']
+tags: ['asdf', 'test']
 img : '/5fcd7719e9cd0071018a4e5b8e3e5584.gif'
 
 ---

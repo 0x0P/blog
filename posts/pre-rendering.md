@@ -2,8 +2,7 @@
 title: '응애 나 애기 테스트 글 TEST TEST 1234'
 date: '2022-01-01'
 about: "asdf"
-category: 'test2'
-tag: ['ddd', 'arc']
+tags: ['ddd', 'arc']
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

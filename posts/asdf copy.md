@@ -2,8 +2,7 @@
 title: '쓸만한asdfasdf 제목이 없네'
 date: '202220-01-01'
 about: "asdfasdfsafsd"
-category: 'test'
-tag: ['asdf', 'asf']
+tags: ['asdf', 'asf']
 img: '/7a054963e7cdb8c3e665d38f090d4bfd.jpg'
 ---
 

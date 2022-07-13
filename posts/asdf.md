@@ -2,8 +2,7 @@
 title: '쓸만한 제목이 있d네'
 date: '2020-01-01'
 about: "asdfasdfsafsd"
-category: 'test'
-tag: ['aasbbsdf', 'bbbb']
+tags: ['aasbbsdf', 'bbbb']
 img : '/test.png'
 
 ---

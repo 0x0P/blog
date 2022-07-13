@@ -15,7 +15,7 @@ export default function Post({
     title: string
     date: string
     content: string
-    tag: Array<string>
+    tags: Array<string>
     img: string
   }
 }) {
@@ -47,7 +47,7 @@ let style = {
       />
       <h1 className={`text-5xl font-extrabold m-5 mb-0 mt-10`}>{postData.title}</h1>
       <div className="m-5 mt-3  flex flex-row gap-2 flex-wrap">
-          {postData.tag.map((tag) => ( 
+          {postData.tags.map((tag) => ( 
             <div className="bg-indigo-400/20 hover:bg-indigo-300/60  dark:bg-indigo-800/20 dark:hover:bg-indigo-800/60 text-indigo-500  duration-300 w-fit h-min pl-1 pr-1 rounded-md">{`#${tag}`}</div>
             ))}
         </div>

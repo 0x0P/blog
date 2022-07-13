@@ -19,7 +19,7 @@ export function getSortedPostsData() {
     const matterResult = matter(fileContents)
     return {
       id,
-      ...(matterResult.data as { date: string; title: string; about: string; category: string; tag: Array<string>, img: string })
+      ...(matterResult.data as { date: string; title: string; about: string; tags: Array<string>, img: string })
     }
   })
   return allPostsData.sort((a, b) => {
@@ -56,6 +56,6 @@ export async function getPostData(id: string) {
   return {
     id,
     content,
-    ...(matterResult.data as { date: string; title: string; about: string; category: string; tag: Array<string>, img: string })
+    ...(matterResult.data as { date: string; title: string; about: string; tags: Array<string>, img: string })
   }
 }
