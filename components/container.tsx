@@ -32,7 +32,7 @@ useEffect(() => {
 })
 
   return (
-    <div className={`w-fullm-0 flex flex-col items-center p-3`}>
+    <div className={`w-full m-0 flex flex-col items-center p-3`}>
       <Head>
         <title >{title}</title>
       </Head>
@@ -45,7 +45,7 @@ useEffect(() => {
         options={{ showSpinner: false,
       }}
       />
-      <header  className={`navDiv w-full flex flex-row duration-300 justify-between h-10 top-0 mt-0 items-center fixed z-10 	`}>
+      <header  className={`navDiv w-full flex flex-row duration-300 justify-between h-10 top-0 mt-0 items-center fixed z-10`}>
         <div className={`flex flex-row`}>
         <Link href="/">
           <a>

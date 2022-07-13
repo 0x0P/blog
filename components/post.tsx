@@ -31,7 +31,7 @@ const BlogPost : NextPage<propsTypes> = (props) => {
             <div className={`font-light`}>{props.about}</div>
             </div>
             <Image
-            className="object-contain rounded-b-xl"
+            className="object-contain w-full rounded-b-xl"
               src={`${img}`}
               alt=""
             />

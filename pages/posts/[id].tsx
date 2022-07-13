@@ -43,7 +43,7 @@ let style = {
       <article>
       <div className="fixed top-0 bg-black dark:bg-white left-0 right-0 h-[1.5px] z-10 progressBar"></div>
       <div style={style}
-      className="bgImg w-screen m-0 p-0  h-56 bg-cover mt-10 bg-center rounded-xl"
+      className="bgImg w-full m-0 p-0  h-56 bg-cover mt-10 bg-center rounded-xl"
       />
       <h1 className={`text-5xl font-extrabold m-5 mb-0 mt-10`}>{postData.title}</h1>
       <h1 className={`text-sm font-thin m-5 `}>{postData.date}</h1>

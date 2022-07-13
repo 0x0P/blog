@@ -13,25 +13,19 @@
   --color : black
 }
 
-
 body{
   background-color: var(--bg-color);
   color: var(--color);
 }
 * { 
 font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-padding: 0;
-margin: 0;
 font-weight: 100;
+max-width: 100vw;
 }
 
 
 a {
   color: rgb(83, 83, 255)
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .navTitle[data-change="false"], .navTitle{
@@ -51,7 +45,6 @@ a {
 }
 .show{
   animation: show 0.5s both ;
-
 }
 @keyframes show {
   from{

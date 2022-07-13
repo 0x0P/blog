@@ -18,7 +18,7 @@ export default function Home({
 
   return (
     <div>
-    <div className='w-screen h-[50vh] flex-col flex justify-center items-center'>
+    <div className='w-screen h-[50vh] mt-10 flex-col flex justify-center items-center'>
     <h1 className={`text-5xl font-extrabold`}>엄청난 블로그</h1>
     <h1 className={`text-xl font-thin mt-5`}>응애 나 애기 일기장</h1>
     <div className="p-5 pb-0 flex flex-row gap-2 flex-wrap">
