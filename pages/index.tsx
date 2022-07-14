@@ -1,7 +1,6 @@
 import type { GetStaticProps, NextPage } from 'next'
 import BlogPost from '../components/post';
 import { getSortedPostsData } from '../lib/posts';
-
 export default function Home({
   allPostsData
 }: {
@@ -15,7 +14,6 @@ export default function Home({
   }[]
 }) {  
   const listMap = allPostsData.slice(0, 5)
-
   return (
     <div>
     <div className='w-screen h-[50vh] mt-10 flex-col flex justify-center items-center'>
