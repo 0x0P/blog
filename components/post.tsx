@@ -24,7 +24,7 @@ function BlogPost(props): JSX.Element {
           ))}
         </div>
         <Link href={`/posts/${props.id}`} passHref>
-          <a className="mt-3 w-min text-black hover:text-indigo-500  duration-300 ">
+          <a className="mt-3 w-min text-black dark:text-white hover:text-indigo-500  duration-300 ">
             <div className="p-5 pt-1 pb-3">
               <div className={`font-bold text-2xl break-words`}>{props.title}</div>
               <h1 className="font-thin text-sm w-fit">{props.date}</h1>
