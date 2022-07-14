@@ -12,7 +12,6 @@
     "@monaco-editor/react": "^4.4.5",
     "@reduxjs/toolkit": "^1.8.3",
     "@svgr/webpack": "^6.2.1",
-    "@tailwindcss/typography": "^0.5.2",
     "animate-css-grid": "^1.4.3",
     "aos": "^2.3.4",
     "fs": "^0.0.1-security",
@@ -29,12 +28,14 @@
     "rehype-highlight": "^5.0.2",
     "rehype-raw": "^6.1.1",
     "rehype-remark": "^9.1.2",
+    "remark": "^14.0.2",
     "remark-gfm": "^3.0.1",
     "remark-html": "^15.0.1",
     "remark-stringify": "^10.0.2",
     "scrollprogress": "^3.0.2"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.4",
     "@types/node": "18.0.1",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",

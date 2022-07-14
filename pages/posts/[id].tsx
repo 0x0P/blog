@@ -5,7 +5,6 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import { useEffect } from 'react'
 import { changeTitle } from '../../lib/ct'
 import ScrollProgress from 'scrollprogress';
-import Image from "next/future/image";
 import Link from 'next/link'
 
 
@@ -59,7 +58,7 @@ let style = {
         </div>
         <div>
         </div>
-          <div className='p-5 w-fit' dangerouslySetInnerHTML={{ __html: postData.content }} />
+          <div className='p-5 dark:prose-invert prose' dangerouslySetInnerHTML={{ __html: postData.content }} />
       </article>
       </>
   )

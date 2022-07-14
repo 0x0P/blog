@@ -1,18 +1,10 @@
-pre code.hljs{display:block;overflow-x:auto;padding:1em;
+pre code.hljs{display:block;overflow-x:auto;
 border-radius:8px;}code.hljs{padding:3px 5px}
 
 .hljs {
   color: #c9d1d9;
-  background: var(--cd-bg);
 }
-[theme='dark'] {
-  --cd-bg : #181818;
 
-}
-[theme='light'] {
-  --cd-bg : #141e2c;
-
-}
 
 
 .hljs-doctag,
