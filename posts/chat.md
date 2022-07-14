@@ -14,9 +14,10 @@ img: '/chatproject1.png'
 이 프로젝틑를 만드는 가장 큰 이유중 하나이다.  
 사용자의 안전을 위하여, 범죄가 일어나도, 내가 책임지고싶어도 못질정도로(사실 빡대가리라 뭐 어케못해서 책임은 못짐) 아무튼 이를 위해 종단간 암호화를 이용하여 채팅을 주고받게 만들것이다.
 ### 종단간 암호화란?
-<img width="982" alt="스크린샷 2022-07-14 오후 10 31 23" src="https://user-images.githubusercontent.com/69731703/178994263-d70ea20a-63b6-4eea-9d7e-20894d68b675.png">  
 
-  [이럴때만큼은 킹무갓키](https://namu.wiki/w/%EC%A2%85%EB%8B%A8%EA%B0%84%20%EC%95%94%ED%98%B8%ED%99%94)
+![종단간암호화](https://user-images.githubusercontent.com/69731703/178994263-d70ea20a-63b6-4eea-9d7e-20894d68b675.png)
+
+[이럴때만큼은 킹무갓키](https://namu.wiki/w/%EC%A2%85%EB%8B%A8%EA%B0%84%20%EC%95%94%ED%98%B8%ED%99%94)
 
 ## 다음은 **UI 및 UX**.  
 이것도 중요하다.  
@@ -31,7 +32,7 @@ img: '/chatproject1.png'
 이번 블로그처럼 Next.js와 Tailwind CSS 등을 쓸 에정이다.  
 아맞다 블로그 만드는 과정 글도 써야하는데 귀찮다.  
 [Rescript](https://rescript-lang.org/)도 써볼지 고민을 해봤는데 배우기 뒤지게 귀찮아서 포기했다.
-<img width="1275" alt="스크린샷 2022-07-14 오후 10 52 11" src="https://user-images.githubusercontent.com/69731703/178998507-4df892e5-af41-40d4-8e4d-bf27980ab431.png">  이게 Rescript인데 코드만 봐도 어질어질하다. 근데 또 간지나는것같기도 하고..
+![Rescript](https://user-images.githubusercontent.com/69731703/178998507-4df892e5-af41-40d4-8e4d-bf27980ab431.png)  이게 Rescript인데 코드만 봐도 어질어질하다. 근데 또 간지나는것같기도 하고..
 
 나중에 방학하고 시간남으면 써볼예정.
 아무튼 프론트엔드를 어케만들지도 많이 고민중이다.  

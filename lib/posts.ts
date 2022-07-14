@@ -10,7 +10,7 @@ import rehypeHighlight from 'rehype-highlight'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
-export function getSortedPostsData() {
+export function getSortedPostsData(): { date: string; title: string; about: string; tags: Array<string>; img: string; id: string; }[] {
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map(fileName => {
     const id = fileName.replace(/\.md$/, '')
@@ -51,7 +51,7 @@ export async function getPostData(id: string) {
   .use(remark2rehype)
   .use(rehypeHighlight)
   .use(html)
-    .process(matterResult.content)
+  .process(matterResult.content)
   const content = processedContent.toString()
   return {
     id,
