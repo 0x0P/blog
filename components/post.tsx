@@ -12,7 +12,7 @@ function BlogPost(props): JSX.Element {
     img = "/";
   }
   return (
-    <div>
+    <div className="w-full">
       <div data-aos="fade-up" className={`cursor-pointer bg-white dark:bg-gray h-min rounded-xl w-full md:max-w-xs hover:drop-shadow-lg  ease-in-out duration-150`}>
         <div className="p-5 pb-0 flex flex-row gap-2 flex-wrap">
           {props.tags?.map((tag) => (
