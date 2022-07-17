@@ -8,8 +8,6 @@ export default function Document() {
       <meta content={metadata.description} name="description" />
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7519087055998524"
      crossOrigin="anonymous"></script>
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7519087055998524"
-     crossOrigin="anonymous"></script>
       </Head>
       <body>
         <Main />
