@@ -1,6 +1,6 @@
 ---
 title: 'Hello, World!'
-date: '2022-07-14'
+date: '2022-07-13'
 about: "블로그 첫글"
 tags: ['첫글', '개발', 'TEST']
 img: '/helloworld.png'
