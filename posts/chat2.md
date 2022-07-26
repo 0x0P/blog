@@ -72,6 +72,7 @@ Existing code can be migrated by decoding the buffer explicitly.
 [8.0.0 문자열로 디코딩 하지 않는다고 한다](https://github.com/websockets/ws/releases/tag/8.0.0)
 
 ```ts
+// server.ts
     ws.on("message", function message(data, isBinary) {
       const message = isBinary ? data : data.toString();
       console.log(message);
@@ -83,9 +84,32 @@ Existing code can be migrated by decoding the buffer explicitly.
 
 이제 채팅을 해야하기때문에 다시 클라이언트로 데이터를 되돌려줘야한다.
 ```ts
+// server.ts
       // -- console.log(message);
       wss.clients.forEach(client => {
         client.send(message)
       })
 ```
 
+```ts
+// index.ts
+ws.on("message", (data : string, isBinary) => {
+    const message = isBinary ? data : data.toString();
+    console.log(message)
+});
+```
+
+잘 작동은 하지만 누가 누군지 구별을 못하게 되었다. 자동으로 클라이언트에서 랜덤으로 닉네임을 정하게 하였다.
+
+```ts
+// index.ts
+const nick = (Math.random() + 1).toString(36).substring(7);
+console.log(`Nickname: ${nick}`);
+// ...
+rl.on("line", (line : string) => {
+    ws.send(`${nick} : ${line}`)
+});
+```
+![콘솔에서 만남을 추구하면 안 되는걸까](https://user-images.githubusercontent.com/69731703/181128241-713bef34-33ed-4551-959c-49a5eb0ca47a.png)
+
+# 끝!
